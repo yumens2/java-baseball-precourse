@@ -43,7 +43,7 @@ object InputView {
                 println("시도할 회수는 몇회인가요?")
                 val input = readln()
                 return input.toInt().also {
-                    require(it > 0) { "[ERROR] 회수는 1 이상이어야 합니다." }
+                    require(it > 0) { "[ERROR]-회수는 1 이상이어야 합니다." }
                 }
             } catch (e: Exception) {
                 println("[ERROR] 올바른 숫자를 입력해주세요.")
